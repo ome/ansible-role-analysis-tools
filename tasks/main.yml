@@ -11,7 +11,6 @@
 - name: system packages | analysis utils
   become: true
   ansible.builtin.dnf:
-    update_cache: true
     name: "{{ item }}"
     state: present
   with_items:
